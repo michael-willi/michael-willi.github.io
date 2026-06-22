@@ -1,191 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Willi — Founder & CEO at Impact Margin</title>
-    <meta name="description" content="Michael Willi is the Founder & CEO of Impact Margin, a sustainability platform helping businesses cut costs and operate more efficiently. Based in Austin, TX. Indiana University Bloomington.">
-    <meta name="author" content="Michael Willi">
-    <link rel="canonical" href="https://michaelwilli.com/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Michael Willi — Founder & CEO at Impact Margin">
-    <meta property="og:description" content="Founder & CEO of Impact Margin. Indiana University Bloomington. Austin, TX.">
-    <meta property="og:url" content="https://michaelwilli.com/">
-    <meta property="og:type" content="profile">
-    <meta property="profile:first_name" content="Michael">
-    <meta property="profile:last_name" content="Willi">
+  <title>Michael Willi | Founder &amp; CEO of Impact Margin</title>
+  <meta name="description" content="Michael Willi is the founder and CEO of Impact Margin, software that helps independent businesses find the money quietly leaking out of their bills. Indiana University Bloomington, 4.0 GPA. Based in Austin, Texas.">
+  <meta name="author" content="Michael Willi">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0A66C2">
+  <link rel="canonical" href="https://michaelwilli.com/">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Michael Willi — Founder & CEO at Impact Margin">
-    <meta name="twitter:description" content="Founder & CEO of Impact Margin. Indiana University Bloomington. Austin, TX.">
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Michael Willi">
+  <meta property="og:title" content="Michael Willi | Founder &amp; CEO of Impact Margin">
+  <meta property="og:description" content="Founder and CEO of Impact Margin. Indiana University Bloomington. Based in Austin, Texas.">
+  <meta property="og:url" content="https://michaelwilli.com/">
+  <meta property="og:image" content="https://michaelwilli.com/photo.jpg">
+  <meta property="og:image:alt" content="Portrait of Michael Willi">
+  <meta property="profile:first_name" content="Michael">
+  <meta property="profile:last_name" content="Willi">
 
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Michael Willi",
-        "givenName": "Michael",
-        "familyName": "Willi",
-        "url": "https://michaelwilli.com",
-        "image": "https://michaelwilli.com/photo.jpg",
-        "jobTitle": "Founder & CEO",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Impact Margin",
-            "description": "A sustainability platform helping businesses cut costs and operate more efficiently."
-        },
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Indiana University Bloomington"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Austin",
-            "addressRegion": "TX",
-            "addressCountry": "US"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/michael-willi/"
-        ]
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Michael Willi | Founder &amp; CEO of Impact Margin">
+  <meta name="twitter:description" content="Founder and CEO of Impact Margin. Indiana University Bloomington. Based in Austin, Texas.">
+  <meta name="twitter:image" content="https://michaelwilli.com/photo.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A66C2'/%3E%3Ctext x='50' y='71' font-family='Arial,sans-serif' font-size='62' font-weight='700' fill='white' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f6f7f6;
+      --text: #16181c;
+      --muted: #5b6168;
+      --accent: #0A66C2;
+      --accent-ink: #004182;
+      --border: #e6e8e6;
+      --ring: rgba(10, 102, 194, 0.35);
     }
-    </script>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1211;
+        --bg-soft: #161a18;
+        --text: #eef1ee;
+        --muted: #a3aaa4;
+        --accent: #70b5f9;
+        --accent-ink: #9cc8f5;
+        --border: #262b27;
+        --ring: rgba(112, 181, 249, 0.35);
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    main {
+      width: 100%;
+      max-width: 620px;
+      text-align: center;
+    }
+    .photo {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 26px;
+      display: block;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    }
+    h1 {
+      font-size: clamp(2.1rem, 6vw, 2.9rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      font-weight: 700;
+    }
+    .tagline {
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin: 0 0 6px;
+    }
+    .meta {
+      font-size: 0.96rem;
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+    .meta a { color: inherit; text-decoration: none; }
+    .meta a:hover { color: var(--accent); }
+    .bio {
+      text-align: left;
+      font-size: 1.06rem;
+      color: var(--text);
+      margin: 0 auto 30px;
+      max-width: 560px;
+    }
+    .bio p { margin: 0 0 16px; }
+    .bio p:last-child { margin-bottom: 0; }
+    .bio .kicker { color: var(--muted); }
+    .actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 38px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 999px;
+      font-size: 0.97rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.06s ease, background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--accent-ink); }
+    .btn-secondary {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: var(--bg-soft);
+    }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+    .btn svg { width: 17px; height: 17px; }
+    a:focus-visible, .btn:focus-visible {
+      outline: 3px solid var(--ring);
+      outline-offset: 2px;
+    }
+    footer {
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+    }
+    @media (max-width: 480px) {
+      .actions { flex-direction: column; }
+      .btn { justify-content: center; }
+    }
+  </style>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-            background: #fafafa;
-            color: #1a1a1a;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-        }
-
-        .card {
-            max-width: 520px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: 60% 15%;
-            margin: 0 auto 1.75rem;
-            display: block;
-            border: 3px solid #e8e8e8;
-        }
-
-        h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.5px;
-        }
-
-        .headline {
-            font-size: 1.05rem;
-            color: #555;
-            margin-bottom: 0.35rem;
-        }
-
-        .location {
-            font-size: 0.95rem;
-            color: #888;
-            margin-bottom: 2rem;
-        }
-
-        .bio {
-            font-size: 1rem;
-            line-height: 1.7;
-            color: #444;
-            margin-bottom: 2.25rem;
-            text-align: left;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-
-        .links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.6rem;
-            padding: 0.85rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
-
-        .links a:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .links a.linkedin {
-            background: #0a66c2;
-            color: #fff;
-        }
-
-        .links a.email {
-            background: #fff;
-            color: #1a1a1a;
-            border: 1px solid #ddd;
-        }
-
-        .links a svg {
-            width: 20px;
-            height: 20px;
-            flex-shrink: 0;
-        }
-
-        footer {
-            margin-top: 3rem;
-            font-size: 0.8rem;
-            color: #bbb;
-        }
-    </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Willi",
+    "alternateName": "Michael J. Willi",
+    "url": "https://michaelwilli.com/",
+    "image": "https://michaelwilli.com/photo.jpg",
+    "jobTitle": "Founder & CEO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Impact Margin"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Indiana University Bloomington"
+    },
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Austin, Texas"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/michael-willi/"
+    ],
+    "knowsAbout": [
+      "Entrepreneurship",
+      "Software",
+      "Venture Capital",
+      "Real Estate",
+      "Financial Modeling",
+      "Product Development"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <main class="card">
-        <img class="photo" src="photo.jpg" alt="Michael Willi" width="150" height="150">
-        <h1>Michael Willi</h1>
-        <p class="headline">Founder & CEO at Impact Margin</p>
-        <p class="location">Austin, TX &middot; Indiana University Bloomington</p>
+  <main>
+    <img class="photo" src="photo.jpg" width="132" height="132" alt="Michael Willi" fetchpriority="high">
 
-        <p class="bio">
-            Building Impact Margin, a sustainability platform that helps businesses cut costs and operate more efficiently by making going green a growth strategy, not a tradeoff. Studying Merchandising and Product Development at Indiana University's Eskenazi School with a 4.0 GPA, pursuing a Business Minor and Real Estate Certificate through Kelley. Eagle Scout. Always building something.
-        </p>
+    <h1>Michael Willi</h1>
+    <p class="tagline">Founder &amp; CEO of Impact Margin</p>
+    <p class="meta">Austin, Texas &middot; <a href="https://www.linkedin.com/in/michael-willi/" rel="me">Indiana University Bloomington</a></p>
 
-        <div class="links">
-            <a class="linkedin" href="https://www.linkedin.com/in/michael-willi/" rel="me" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                Connect on LinkedIn
-            </a>
-            <a class="email" href="/about">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                About Me
-            </a>
-        </div>
+    <div class="bio">
+      <p>I build software that helps independent businesses find the money quietly leaking out of their bills. Impact Margin reads a business's operating and utility bills, flags overbilling, cost spikes, and late fees, and shows the owner exactly where the savings are and how to capture them. Cutting waste is good for the planet. It is also good for the bottom line.</p>
+      <p>I am exploring Summer 2027 internships in venture capital, private equity, and real estate investing, where I can bring an operator's perspective to evaluating businesses and deals. If you are a founder, an investor, or someone who likes talking about how businesses actually make money, I would genuinely like to connect.</p>
+    </div>
 
-        <footer>&copy; 2026 Michael Willi</footer>
-    </main>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/michael-willi/" rel="me noopener" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        Connect on LinkedIn
+      </a>
+      <a class="btn btn-secondary" href="/about">About me</a>
+    </div>
+
+    <footer>
+      &copy; 2026 Michael Willi
+    </footer>
+  </main>
 </body>
 </html>

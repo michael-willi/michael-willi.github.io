@@ -4,31 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Michael Willi | Founder &amp; CEO of Impact Margin</title>
-  <meta name="description" content="Michael Willi is the founder and CEO of Impact Margin, software that helps independent businesses find the money quietly leaking out of their bills. Indiana University Bloomington, 4.0 GPA. Based in Austin, Texas.">
+  <title>Michael Willi | Indiana University Sophomore and Builder</title>
+  <meta name="description" content="Michael Willi is an Indiana University sophomore exploring private markets. Founded Impact Margin, now in the IU Innovates Incubator. Austin, Texas.">
   <meta name="author" content="Michael Willi">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#0A66C2">
   <link rel="canonical" href="https://michaelwilli.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Michael Willi">
-  <meta property="og:title" content="Michael Willi | Founder &amp; CEO of Impact Margin">
-  <meta property="og:description" content="Founder and CEO of Impact Margin. Indiana University Bloomington. Based in Austin, Texas.">
+  <meta property="og:title" content="Michael Willi | Indiana University Sophomore and Builder">
+  <meta property="og:description" content="Indiana University sophomore exploring private markets, strategy, and operations. Founded Impact Margin, now in the IU Innovates Incubator. Austin, Texas.">
   <meta property="og:url" content="https://michaelwilli.com/">
-  <meta property="og:image" content="https://michaelwilli.com/photo.jpg">
+  <meta property="og:image" content="https://michaelwilli.com/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
   <meta property="og:image:alt" content="Portrait of Michael Willi">
+  <meta property="og:locale" content="en_US">
   <meta property="profile:first_name" content="Michael">
   <meta property="profile:last_name" content="Willi">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Michael Willi | Founder &amp; CEO of Impact Margin">
-  <meta name="twitter:description" content="Founder and CEO of Impact Margin. Indiana University Bloomington. Based in Austin, Texas.">
-  <meta name="twitter:image" content="https://michaelwilli.com/photo.jpg">
+  <meta name="twitter:title" content="Michael Willi | Indiana University Sophomore and Builder">
+  <meta name="twitter:description" content="Indiana University sophomore exploring private markets, strategy, and operations. Founded Impact Margin, now in the IU Innovates Incubator. Austin, Texas.">
+  <meta name="twitter:image" content="https://michaelwilli.com/og.jpg">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A66C2'/%3E%3Ctext x='50' y='71' font-family='Arial,sans-serif' font-size='62' font-weight='700' fill='white' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="photo.jpg" fetchpriority="high">
 
   <style>
     :root {
@@ -113,7 +117,6 @@
     }
     .bio p { margin: 0 0 16px; }
     .bio p:last-child { margin-bottom: 0; }
-    .bio .kicker { color: var(--muted); }
     .actions {
       display: flex;
       gap: 12px;
@@ -164,55 +167,115 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Michael Willi",
-    "alternateName": "Michael J. Willi",
-    "url": "https://michaelwilli.com/",
-    "image": "https://michaelwilli.com/photo.jpg",
-    "jobTitle": "Founder & CEO",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Impact Margin"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "Indiana University Bloomington"
-    },
-    "homeLocation": {
-      "@type": "Place",
-      "name": "Austin, Texas"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Austin",
-      "addressRegion": "TX",
-      "addressCountry": "US"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/michael-willi/"
-    ],
-    "knowsAbout": [
-      "Entrepreneurship",
-      "Software",
-      "Venture Capital",
-      "Real Estate",
-      "Financial Modeling",
-      "Product Development"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://michaelwilli.com/#website",
+        "url": "https://michaelwilli.com/",
+        "name": "Michael Willi",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://michaelwilli.com/#person" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://michaelwilli.com/#webpage",
+        "url": "https://michaelwilli.com/",
+        "name": "Michael Willi | Indiana University Sophomore and Builder",
+        "isPartOf": { "@id": "https://michaelwilli.com/#website" },
+        "about": { "@id": "https://michaelwilli.com/#person" },
+        "primaryImageOfPage": { "@id": "https://michaelwilli.com/#photo" },
+        "dateModified": "2026-09-26",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://michaelwilli.com/#photo",
+        "url": "https://michaelwilli.com/og.jpg",
+        "contentUrl": "https://michaelwilli.com/og.jpg",
+        "width": 1200,
+        "height": 1200,
+        "caption": "Michael Willi"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://michaelwilli.com/#person",
+        "name": "Michael Willi",
+        "alternateName": "Michael J. Willi",
+        "givenName": "Michael",
+        "familyName": "Willi",
+        "url": "https://michaelwilli.com/",
+        "image": { "@id": "https://michaelwilli.com/#photo" },
+        "description": "Indiana University Bloomington sophomore studying Merchandising and Product Development, with a Business minor through the Kelley School of Business. Founded Impact Margin, a bill-savings software company, and is now in the IU Innovates Incubator doing market research and product discovery for new ventures. Exploring private markets, strategy, and operations.",
+        "jobTitle": "Student and Entrepreneur",
+        "affiliation": [
+          { "@id": "https://michaelwilli.com/#iu" },
+          {
+            "@type": "Organization",
+            "name": "IU Innovates",
+            "url": "https://innovate.iu.edu/"
+          }
+        ],
+        "alumniOf": { "@id": "https://michaelwilli.com/#iu" },
+        "award": [
+          "Eagle Scout",
+          "Executive Dean's List, Indiana University Bloomington"
+        ],
+        "homeLocation": [
+          { "@type": "Place", "name": "Austin, Texas" },
+          { "@type": "Place", "name": "Bloomington, Indiana" }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Austin",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/michael-willi/",
+          "https://github.com/michael-willi"
+        ],
+        "knowsAbout": [
+          "Entrepreneurship",
+          "Private Equity",
+          "Venture Capital",
+          "Real Estate Underwriting",
+          "Financial Modeling",
+          "Product Development",
+          "Lithium extraction from oilfield produced water",
+          "Software"
+        ]
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "@id": "https://michaelwilli.com/#iu",
+        "name": "Indiana University Bloomington",
+        "url": "https://bloomington.iu.edu/",
+        "sameAs": "https://en.wikipedia.org/wiki/Indiana_University_Bloomington"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://michaelwilli.com/#impact-margin",
+        "name": "Impact Margin",
+        "description": "Software that read a business's operating and utility bills, flagged overbilling, cost spikes, and late fees, and showed the owner where the savings were. Founded by Michael Willi and operated in 2026.",
+        "founder": { "@id": "https://michaelwilli.com/#person" },
+        "foundingDate": "2026"
+      }
     ]
   }
   </script>
 </head>
 <body>
   <main>
-    <img class="photo" src="photo.jpg" width="132" height="132" alt="Michael Willi" fetchpriority="high">
+    <img class="photo" src="photo.jpg" width="132" height="132" alt="Michael Willi" fetchpriority="high" decoding="async">
 
     <h1>Michael Willi</h1>
-    <p class="tagline">Founder &amp; CEO of Impact Margin</p>
-    <p class="meta">Austin, Texas &middot; <a href="https://www.linkedin.com/in/michael-willi/" rel="me">Indiana University Bloomington</a></p>
+    <p class="tagline">Exploring Private Markets, Strategy &amp; Operations</p>
+    <p class="meta"><a href="https://bloomington.iu.edu/" rel="noopener" target="_blank">Indiana University</a> sophomore &middot; IU Innovates Incubator &middot; Austin, Texas</p>
 
     <div class="bio">
-      <p>I build software that helps independent businesses find the money quietly leaking out of their bills. Impact Margin reads a business's operating and utility bills, flags overbilling, cost spikes, and late fees, and shows the owner exactly where the savings are and how to capture them. Cutting waste is good for the planet. It is also good for the bottom line.</p>
-      <p>I am exploring Summer 2027 internships in venture capital, private equity, and real estate investing, where I can bring an operator's perspective to evaluating businesses and deals. If you are a founder, an investor, or someone who likes talking about how businesses actually make money, I would genuinely like to connect.</p>
+      <p>I have been building since high school: Ethereum mining rigs, products sourced from overseas manufacturers, small ecommerce brands, and most recently Impact Margin, software that read a business's operating and utility bills, flagged overbilling, and showed the owner exactly where money was leaking. We took it from an idea tested on campus to a live web app with a paying customer before winding it down. Some failed fast. Some made real money. All of them showed me a business from the inside, and that view is why I am drawn to investing.</p>
+      <p>I was selected for the IU Innovates Incubator, where I am currently doing market research and product discovery for the new ventures I am working on.</p>
+      <p>I am exploring Summer 2027 internships in private equity, venture capital, and real estate investing, where I can bring an operator's perspective to evaluating businesses and deals. If you are a founder, an investor, or someone who likes talking about how businesses actually make money, let's connect.</p>
     </div>
 
     <div class="actions">

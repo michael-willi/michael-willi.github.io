@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About | Michael Willi</title>
-  <meta name="description" content="Michael Willi is the founder and CEO of Impact Margin and a student at Indiana University Bloomington. He has been building businesses since high school, from direct-to-consumer brands to bill-savings software.">
+  <title>About Michael Willi | Builder, Student, Aspiring Investor</title>
+  <meta name="description" content="Michael Willi is an Indiana University sophomore building since high school: Impact Margin founder, IU Innovates Incubator, lithium thesis author, Eagle Scout.">
   <meta name="author" content="Michael Willi">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="theme-color" content="#0A66C2">
   <link rel="canonical" href="https://michaelwilli.com/about">
 
@@ -15,18 +15,21 @@
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Michael Willi">
   <meta property="og:title" content="About Michael Willi">
-  <meta property="og:description" content="Founder and CEO of Impact Margin. Entrepreneur, Eagle Scout, and student at Indiana University Bloomington.">
+  <meta property="og:description" content="Indiana University sophomore building since high school. Founder of Impact Margin, IU Innovates Incubator, lithium venture thesis author, Eagle Scout.">
   <meta property="og:url" content="https://michaelwilli.com/about">
-  <meta property="og:image" content="https://michaelwilli.com/photo.jpg">
+  <meta property="og:image" content="https://michaelwilli.com/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
   <meta property="og:image:alt" content="Portrait of Michael Willi">
+  <meta property="og:locale" content="en_US">
   <meta property="profile:first_name" content="Michael">
   <meta property="profile:last_name" content="Willi">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="About Michael Willi">
-  <meta name="twitter:description" content="Founder and CEO of Impact Margin. Entrepreneur, Eagle Scout, and student at Indiana University Bloomington.">
-  <meta name="twitter:image" content="https://michaelwilli.com/photo.jpg">
+  <meta name="twitter:description" content="Indiana University sophomore building since high school. Founder of Impact Margin, IU Innovates Incubator, lithium venture thesis author, Eagle Scout.">
+  <meta name="twitter:image" content="https://michaelwilli.com/og.jpg">
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230A66C2'/%3E%3Ctext x='50' y='71' font-family='Arial,sans-serif' font-size='62' font-weight='700' fill='white' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
 
@@ -103,6 +106,24 @@
       outline-offset: 2px;
       border-radius: 4px;
     }
+    .facts {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 1.0rem;
+    }
+    .facts li {
+      display: grid;
+      grid-template-columns: 128px 1fr;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .facts li:last-child { border-bottom: 0; }
+    .facts span:first-child { color: var(--muted); }
+    @media (max-width: 480px) {
+      .facts li { grid-template-columns: 1fr; gap: 2px; }
+    }
     .cta { margin-top: 44px; }
     .btn {
       display: inline-flex;
@@ -132,32 +153,103 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Michael Willi",
-      "alternateName": "Michael J. Willi",
-      "url": "https://michaelwilli.com/",
-      "image": "https://michaelwilli.com/photo.jpg",
-      "jobTitle": "Founder & CEO",
-      "worksFor": { "@type": "Organization", "name": "Impact Margin" },
-      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Indiana University Bloomington" },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Austin",
-        "addressRegion": "TX",
-        "addressCountry": "US"
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://michaelwilli.com/about#profilepage",
+        "url": "https://michaelwilli.com/about",
+        "name": "About Michael Willi",
+        "isPartOf": { "@id": "https://michaelwilli.com/#website" },
+        "dateCreated": "2026-06-22",
+        "dateModified": "2026-09-26",
+        "inLanguage": "en-US",
+        "mainEntity": { "@id": "https://michaelwilli.com/#person" },
+        "breadcrumb": { "@id": "https://michaelwilli.com/about#breadcrumb" }
       },
-      "sameAs": [ "https://www.linkedin.com/in/michael-willi/" ],
-      "knowsAbout": [
-        "Entrepreneurship",
-        "Software",
-        "Venture Capital",
-        "Real Estate",
-        "Financial Modeling",
-        "Product Development"
-      ]
-    }
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://michaelwilli.com/about#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://michaelwilli.com/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://michaelwilli.com/about" }
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://michaelwilli.com/#person",
+        "name": "Michael Willi",
+        "alternateName": "Michael J. Willi",
+        "givenName": "Michael",
+        "familyName": "Willi",
+        "url": "https://michaelwilli.com/",
+        "image": "https://michaelwilli.com/og.jpg",
+        "description": "Indiana University Bloomington sophomore studying Merchandising and Product Development, with a Business minor through the Kelley School of Business. Founded Impact Margin, a bill-savings software company, and is now in the IU Innovates Incubator doing market research and product discovery for new ventures. Exploring private markets, strategy, and operations.",
+        "jobTitle": "Student and Entrepreneur",
+        "affiliation": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Indiana University Bloomington",
+            "url": "https://bloomington.iu.edu/"
+          },
+          {
+            "@type": "Organization",
+            "name": "IU Innovates",
+            "url": "https://innovate.iu.edu/"
+          }
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Indiana University Bloomington",
+            "url": "https://bloomington.iu.edu/"
+          },
+          {
+            "@type": "HighSchool",
+            "name": "St. Andrew's Episcopal School",
+            "address": { "@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US" }
+          }
+        ],
+        "award": [
+          "Eagle Scout",
+          "Executive Dean's List, Indiana University Bloomington"
+        ],
+        "homeLocation": [
+          { "@type": "Place", "name": "Austin, Texas" },
+          { "@type": "Place", "name": "Bloomington, Indiana" }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/michael-willi/",
+          "https://github.com/michael-willi"
+        ],
+        "knowsAbout": [
+          "Entrepreneurship",
+          "Private Equity",
+          "Venture Capital",
+          "Real Estate Underwriting",
+          "Financial Modeling",
+          "Product Development",
+          "Lithium extraction from oilfield produced water",
+          "Software"
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://michaelwilli.com/#lithium-thesis",
+        "name": "Reduce, Reuse, Recycle... Profit?",
+        "headline": "Reduce, Reuse, Recycle... Profit? A venture thesis on lithium from Permian Basin produced water",
+        "author": { "@id": "https://michaelwilli.com/#person" },
+        "datePublished": "2026-07",
+        "about": [ "Lithium", "Permian Basin", "Produced water", "Direct lithium extraction" ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://michaelwilli.com/#impact-margin",
+        "name": "Impact Margin",
+        "description": "Software that read a business's operating and utility bills, flagged overbilling, cost spikes, and late fees, and showed the owner where the savings were. Founded by Michael Willi and operated in 2026.",
+        "founder": { "@id": "https://michaelwilli.com/#person" },
+        "foundingDate": "2026"
+      }
+    ]
   }
   </script>
 </head>
@@ -166,24 +258,45 @@
     <a class="back" href="/">&larr; Home</a>
 
     <h1>About Me</h1>
-    <p class="lead">Founder, builder, and student in Austin, Texas.</p>
+    <p class="lead">Builder, student, and aspiring investor. Bloomington, Indiana and Austin, Texas.</p>
 
-    <h2>What I'm building</h2>
-    <p>I'm the founder and CEO of Impact Margin, software that helps independent businesses find the money quietly leaking out of their bills. The product reads a business's operating and utility bills, flags overbilling, cost spikes, and late fees, and shows the owner exactly where the savings are and how to capture them. We took it from an idea tested on campus to a live web app with a first paying customer, a local coffee shop that now acts as a design partner shaping the roadmap. It is priced simply: $15 per month per location, with a 30-day free trial.</p>
-    <p>Impact Margin is a Delaware C-Corp. I own product, go-to-market, and pricing, and I build alongside my cofounder and CTO. We are also prototyping a paperless receipt system that plugs into the point of sale where a thermal printer would normally connect, cutting paper and waste while bringing customers back through coupons and offers. Cutting waste is good for the planet. It is also good for the bottom line.</p>
+    <h2>What I'm working on</h2>
+    <p>I was selected for the IU Innovates Incubator, where I am currently doing market research and product discovery for the new ventures I am working on. The method is the one that worked last time: talk to operators before building anything, and let positioning, not features, decide what gets built.</p>
+
+    <h2>Impact Margin</h2>
+    <p>In 2026 I founded and led Impact Margin, software that read a business's operating and utility bills, flagged overbilling, cost spikes, and late fees, and showed the owner exactly where the savings were and how to capture them. In a few months my cofounder and CTO and I took it from an idea we were testing on campus to a live web app with a paying customer, a local coffee shop that came on as a design partner and shaped the roadmap with us. I owned product, go-to-market, and pricing, and we ran on a simple subscription at $5 per month per location with a 30-day free trial.</p>
+    <p>Before building anything we ran direct customer discovery, including dozens of operator conversations and live testing on campus, and the biggest lesson was that positioning, not features, drove demand. It did not last as a business, but it shipped and it earned a paying customer. Running it taught me more than planning it ever did.</p>
 
     <h2>Background</h2>
-    <p>I have been starting businesses since high school. Some failed fast, some made real money, and all of them taught me something. I built and ran an Ethereum mining rig, sourced products from overseas manufacturers through Alibaba to launch direct-to-consumer apparel and sporting goods brands, and used buying bots to secure hard-to-find RTX 3080 graphics cards for resale during the 2020 to 2021 shortage. I was launching consumer products before I could drive.</p>
-    <p>Before Impact Margin, I spent nearly five years as a Legal Assistant at Willi Law Firm in Austin. I guided clients one-on-one through estate planning and regulated federal filings, walked them through fast-changing rules so they understood what they were signing, and served as an authorized witness on more than 100 estate plans.</p>
+    <p>I have been building since high school: Ethereum mining rigs, products sourced from overseas manufacturers, small ecommerce brands. Some failed fast. Some made real money. All of them showed me a business from the inside, and that view is why I am drawn to investing. Operating teaches you the gap between how a deal is presented and how it actually performs. That gap is where I want to work.</p>
+    <p>The specifics: I built and ran an Ethereum mining rig, sourced products from overseas manufacturers through Alibaba to launch direct-to-consumer apparel and sporting goods brands, and used buying bots to secure hard-to-find RTX 3080 graphics cards for resale during the 2020 to 2021 shortage. I was launching consumer products before I could drive.</p>
+    <p>I also spent nearly five years as a legal assistant at Willi Law Firm, my family's estate planning and probate practice in Austin, guiding clients one-on-one through estate planning and regulated federal filings and serving as an authorized witness on more than 100 estate plans. In Summer 2026 I went back as a builder-operator and shipped a privacy-first desktop app, local AI and zero cloud, that turns thousands of pages of medical records into a patient chronology for probate litigation. It is in use on live matters. I also owned the hiring funnel for the firm's legal assistant role, and the firm hired from my top-10 brief.</p>
+
+    <h2>Research and writing</h2>
+    <p>The same lens runs through my research and writing. I published a venture thesis on the startups pulling lithium out of Permian Basin oilfield wastewater. It drew inbound from senior oil and gas executives, led to calls with executives and a startup operator in the play, and to a shadow day on Rio Energy International's oil trading desk in Houston. The second edition, published in July 2026, folds in the technical feedback industry readers sent.</p>
+    <p>I have also underwritten a twelve-unit multifamily acquisition near campus from rent roll to returns, modeling its in-place performance against a value-add scenario with a full pro forma. Both are on my <a href="https://www.linkedin.com/in/michael-willi/" rel="me noopener" target="_blank">LinkedIn</a>. On the finance side, I completed Wall Street Prep's Excel course and am working through the Accounting Crash Course, with the Private Equity Masterclass next.</p>
 
     <h2>Education</h2>
-    <p>I'm a sophomore at Indiana University Bloomington, studying Merchandising and Product Development at the Eskenazi School of Art, Architecture and Design with a 4.0 GPA. I'm pursuing a Business Minor and a Real Estate Certificate through the Kelley School of Business, and I was named to the Executive Dean's List in Spring 2026. I'm part of the IU Innovates Entrepreneurship Bootcamp and the Retail Studies Organization.</p>
-    <p>Before IU, I graduated from St. Andrew's Episcopal School, where I played Varsity Football and Varsity Golf and founded the Investing Club, recruiting and training 31 members as its president. I also attended the National Student Leadership Conference for Business and Entrepreneurship at Columbia University, where my team reached the pitch competition finals.</p>
+    <p>I am a sophomore at Indiana University Bloomington studying Merchandising and Product Development at the Eskenazi School of Art, Architecture and Design, with a Business Minor through the Kelley School of Business. Product development is not just coursework but the discipline of turning an idea into a paying customer. I study it in class and have run it for real. 4.0 GPA. Executive Dean's List, Spring 2026. I am part of the IU Innovates Incubator and the Retail Studies Organization.</p>
+    <p>Before IU, I graduated from St. Andrew's Episcopal School in Austin, where I played Varsity Football and Varsity Golf and founded the Investing Club, recruiting and training 31 members as its president. I also attended the National Student Leadership Conference for Business and Entrepreneurship at Columbia University, where my team reached the pitch competition finals.</p>
 
     <h2>Beyond the work</h2>
-    <p>I'm drawn to venture capital, real estate, and the places where technology and business growth meet. I taught myself to underwrite multifamily real estate and published an analysis of a 12-unit property near campus, modeling its in-place performance against a value-add scenario with a full pro forma and return analysis. I earned my Eagle Scout rank through Scouting America, where I served as Senior Patrol Leader.</p>
+    <p>I earned my Eagle Scout rank through Scouting America, where I served as Senior Patrol Leader. I spend the school year in Bloomington, Indiana and summers in Austin, Texas.</p>
+
+    <h2>Quick facts</h2>
+    <ul class="facts">
+      <li><span>Name</span><span>Michael Willi (Michael J. Willi)</span></li>
+      <li><span>Based</span><span>Bloomington, Indiana during the school year; Austin, Texas in the summer</span></li>
+      <li><span>School</span><span>Indiana University Bloomington, Class of 2029. B.S. in Merchandising and Product Development, Eskenazi School. Business Minor, Kelley School of Business.</span></li>
+      <li><span>Now</span><span>IU Innovates Incubator: market research and product discovery for new ventures</span></li>
+      <li><span>Previously</span><span>Founder and CEO of Impact Margin (2026); legal assistant, Willi Law Firm, Austin</span></li>
+      <li><span>Writing</span><span>Venture thesis on lithium from Permian Basin produced water, second edition July 2026</span></li>
+      <li><span>Recognition</span><span>4.0 GPA, Executive Dean's List, Eagle Scout</span></li>
+      <li><span>Looking for</span><span>Summer 2027 internships in private equity, venture capital, and real estate investing</span></li>
+    </ul>
 
     <div class="cta">
+      <p>Let's connect.</p>
       <a class="btn" href="https://www.linkedin.com/in/michael-willi/" rel="me noopener" target="_blank">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
         Connect on LinkedIn
